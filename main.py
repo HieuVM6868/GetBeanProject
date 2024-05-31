@@ -44,6 +44,11 @@ def fetch_issues():
         "state": "open",
     }
 
+    headers = {
+        "Authorization": f"Bearer {GITHUB_PAT}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+
     issue_response = requests.get(url=ISSUE_API_URL, params=API_PARAM)
     if issue_response.status_code == 200:
         return issue_response.json()
