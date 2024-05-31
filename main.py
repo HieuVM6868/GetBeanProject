@@ -49,7 +49,7 @@ def fetch_issues():
         "Accept": "application/vnd.github.v3+json"
     }
 
-    issue_response = requests.get(url=ISSUE_API_URL, params=API_PARAM)
+    issue_response = requests.get(url=ISSUE_API_URL, params=API_PARAM, headers=headers)
     if issue_response.status_code == 200:
         return issue_response.json()
     else:
