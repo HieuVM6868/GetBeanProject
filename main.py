@@ -17,7 +17,7 @@ os.chdir(PATH)
 # Set up GitHub repository details
 repository_name = 'GetBeanProject'
 branch_name = None
-AUTHOR_NAME = 'adiTYAshah123jnj'
+AUTHOR_NAME = 'HieuVM6868'
 AUTHOR_EMAIL = os.environ.get('GIT_EMAIL', '128502448+HieuVM6868@users.noreply.github.com')
 
 # Get GITHUB_TOKEN from GitHub secrets
